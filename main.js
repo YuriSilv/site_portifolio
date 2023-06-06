@@ -79,7 +79,7 @@ window.onresize = () => window.innerWidth >= 720 ? navBar.classList.remove("menu
 // Load Content
 let portfolioSection = document.querySelector(".portfolio")
 let aboutSection = document.querySelector(".about")
-let contactSection = document.querySelector(".contact")
+//let contactSection = document.querySelector(".contact")
 
 function loadContent(ele) {
     console.log(window.scrollY)
@@ -90,4 +90,4 @@ function loadContent(ele) {
 
 window.addEventListener("scroll", () => loadContent(portfolioSection))
 window.addEventListener("scroll", () => loadContent(aboutSection))
-window.addEventListener("scroll", () => loadContent(contactSection))
+//window.addEventListener("scroll", () => loadContent(contactSection))

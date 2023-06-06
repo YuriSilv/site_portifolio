@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Portfólio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    .author {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 20px;
+    }
+
+    .project {
+      border: 1px solid #ddd;
+      padding: 20px;
+    }
+
+    .project h3 {
+      margin-top: 0;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      color: #333;
+      text-decoration: none;
+      font-size: 24px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Portfólio</h1>
+  </header>
+
+  <section class="author">
+    <h2>Sobre o Autor</h2>
+    <p>Adicione uma breve descrição sobre você aqui.</p>
+  </section>
+
+  <section class="projects">
+    <div class="project">
+      <div class="card">
+        <div class="card-front">
+          <h3>Projeto 1</h3>
+          <p>Descrição do projeto 1.</p>
+        </div>
+        <div class="card-back">
+          <h3>Projeto 1</h3>
+          <p>Detalhes do projeto 1.</p>
+          <a href="#" class="button">Ver Mais</a>
+        </div>
+      </div>
+    </div>
+  
+    <!-- ---------------------------------------------- -->
+    <div class="project">
+        <div class="card">
+          <div class="card-front">
+            <h3>Projeto 2</h3>
+            <p>Descrição do projeto 2.</p>
+          </div>
+          <div class="card-back">
+            <h3>Projeto 2</h3>
+            <p>Detalhes do projeto 2.</p>
+            <a href="#" class="button">Ver Mais</a>
+          </div>
+        </div>
+      </div>
+<!-- ---------------------------------------------- -->
+      <div class="project">
+        <div class="card">
+          <div class="card-front">
+            <h3>Projeto 2</h3>
+            <p>Descrição do projeto 2.</p>
+          </div>
+          <div class="card-back">
+            <h3>Projeto 2</h3>
+            <p>Detalhes do projeto 2.</p>
+            <a href="#" class="button">Ver Mais</a>
+          </div>
+        </div>
+      </div>
+<!-- ---------------------------------------------- -->
+  </section>
+
+  <section class="social-icons">
+    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+      <img src="images/linkedin-icon.png" alt="LinkedIn">
+    </a>
+    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+      <img src="images/twitter-icon.png" alt="Twitter">
+    </a>
+    <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+      <img src="images/github-icon.png" alt="GitHub">
+    </a>
+  </section>
+
+</body>
+
+</html>

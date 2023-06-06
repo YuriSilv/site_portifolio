@@ -1,134 +1,284 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="icon" href="images/Icons/thumb.jpg">
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h3>LOGO</h3>
+        <nav>
+          <ul>
+            <li><a href="#">Homepage</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+          </ul>
+        </nav>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Portfólio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
+        <button onclick="showMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
 
-    header {
-      padding: 20px;
-      text-align: center;
-    }
-
-    h1 {
-      margin: 0;
-    }
-
-    section {
-      padding: 20px;
-    }
-
-    .author {
-      text-align: center;
-      padding: 20px;
-    }
-
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      grid-gap: 20px;
-    }
-
-    .project {
-      border: 1px solid #ddd;
-      padding: 20px;
-    }
-
-    .project h3 {
-      margin-top: 0;
-    }
-
-    .social-icons {
-      display: flex;
-      justify-content: center;
-      margin-top: 20px;
-    }
-
-    .social-icons a {
-      margin: 0 10px;
-      color: #333;
-      text-decoration: none;
-      font-size: 24px;
-    }
-  </style>
-</head>
-
-<body>
-  <header>
-    <h1>Portfólio</h1>
-  </header>
-
-  <section class="author">
-    <h2>Sobre o Autor</h2>
-    <p>Adicione uma breve descrição sobre você aqui.</p>
-  </section>
-
-  <section class="projects">
-    <div class="project">
-      <div class="card">
-        <div class="card-front">
-          <h3>Projeto 1</h3>
-          <p>Descrição do projeto 1.</p>
-        </div>
-        <div class="card-back">
-          <h3>Projeto 1</h3>
-          <p>Detalhes do projeto 1.</p>
-          <a href="#" class="button">Ver Mais</a>
+    <!-- Landing -->
+    <section class="landing">
+      <div class="container">
+        <div>
+          <h2>Yuri Silvino</h2>
+          <h3>Estudante de Ciência de Dados</h3>
+          <p>
+            Hi There! I'm An Obsessed Learner Of Technologies <br />
+            And Looking To Learn New Stuffs Everyday.
+          </p>
+          <div class="anchors">
+            <a href="#portfolio">Show Case</a>
+            <a href="#contact">Contact Me</a>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+
+      <!-- Skills -->
+      <section class="skills">
+        <h2>My Skills</h2>
+        <div class="skills-wrapper">
+          <div class="skills-marquee">
+
+            <div>
+              <img src="images/Icons/python.png" alt="Python" />
+              <span>Python</span>
+            </div>
+
+            <div>
+              <img src="images/Icons/java.png" alt="Java" />
+              <span>Java</span>
+            </div>
+
+            <div>
+              <img src="images/Icons/pandas.png" alt="Pandas" />
+              <span>Pandas</span>
+            </div>
+
+            <div>
+              <img src="images/Icons/r.png" alt="R" />
+              <span>R</span>
+            </div>
+
+            <div>
+              <img src="images/Icons/aws.png" alt="AWS" />
+              <span>AWS</span>
+            </div>
+
+            <div>
+              <img src="images/Icons/git.png" alt="Git" />
+              <span>Git</span>
+            </div>
+          </div>
+
+          <!-- This Is Hidden From Accessebility -->
+          <div aria-hidden="true" class="skills-marquee">
+
+            <div>
+              <img src="images/Icons/python.png" alt="Python" />
+              <span>Python</span>
+            </div>
+
+            <div>
+              <img src="images/Icons/java.png" alt="Java" />
+              <span>Java</span>
+            </div>
+
+            <div>
+              <img src="images/Icons/pandas.png" alt="Pandas" />
+              <span>Pandas</span>
+            </div>
+
+            <div>
+              <img src="images/Icons/r.png" alt="R" />
+              <span>R</span>
+            </div>
+
+            <div>
+              <img src="images/Icons/aws.png" alt="AWS" />
+              <span>AWS</span>
+            </div>
+
+            <div>
+              <img src="images/Icons/git.png" alt="Git" />
+              <span>Git</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skills Progress -->
+        <div class="skills-container">
+          <img src="images/skills.svg" alt="Skills">
+
+          <div class="skills-progress">
   
-    <!-- ---------------------------------------------- -->
-    <div class="project">
-        <div class="card">
-          <div class="card-front">
-            <h3>Projeto 2</h3>
-            <p>Descrição do projeto 2.</p>
-          </div>
-          <div class="card-back">
-            <h3>Projeto 2</h3>
-            <p>Detalhes do projeto 2.</p>
-            <a href="#" class="button">Ver Mais</a>
+              <div class="skill-row">
+                  <p>Python</p>
+                  <div class="skill-bar">
+                      <span data-progress="90%"></span>
+                  </div>
+                  <p class="text-progress">0</p>
+              </div>
+  
+               <div class="skill-row">
+                  <p>Matplotlib & Seaborn</p>
+                  <div class="skill-bar">
+                      <span data-progress="80%"></span>
+                  </div>
+                  <p class="text-progress">0</p>
+              </div>
+
+               <div class="skill-row">
+                  <p>Scikit Learn & Numpy</p>
+                  <div class="skill-bar">
+                      <span data-progress="65%"></span>
+                  </div>
+                  <p class="text-progress">0</p>
+              </div>
+  
+
+               <div class="skill-row">
+                  <p>Estatística</p>
+                  <div class="skill-bar">
+                      <span data-progress="70%"></span>
+                  </div>
+                  <p class="text-progress">0</p>
+              </div>
+  
+
+               <div class="skill-row">
+                  <p>Excel</p>
+                  <div class="skill-bar">
+                      <span data-progress="50%"></span>
+                  </div>
+                  <p class="text-progress">0</p>
+                </div>
           </div>
         </div>
-      </div>
-<!-- ---------------------------------------------- -->
-      <div class="project">
-        <div class="card">
-          <div class="card-front">
-            <h3>Projeto 2</h3>
-            <p>Descrição do projeto 2.</p>
-          </div>
-          <div class="card-back">
-            <h3>Projeto 2</h3>
-            <p>Detalhes do projeto 2.</p>
-            <a href="#" class="button">Ver Mais</a>
-          </div>
+      </section>
+
+      <!-- Portfolio -->
+      <section class="portfolio" id="portfolio">
+        <h2>Portfolio</h2>
+        <nav>
+          <ul>
+            <li><button class="switcher active" data-category="all">All</button></li>
+            <li><button class="switcher" data-category="landing-category">Landing</button></li>
+            <li><button class="switcher" data-category="webapp-category">Web App</button></li>
+            <li><button class="switcher" data-category="api-category">API</button></li>
+          </ul>
+        </nav>
+
+        <!-- Gallery -->
+        <div class="projects-container">
+          <article class="landing-category">
+            <img src="images/model.jpg" alt="Gallery Model">
+            <a href="#">
+              <span>View Demo</span>
+            </a>
+          </article>
+
+          <article class="api-category">
+            <img src="images/model3.jpg" alt="Gallery Model3">
+            <a href="#">
+              <span>View Demo</span>
+            </a>
+          </article>
+          <article class="api-category">
+            <img src="images/model2.jpg" alt="Gallery Model">
+            <a href="#">
+              <span>View Demo</span>
+            </a>
+          </article>
+
+          <article class="webapp-category">
+            <img src="images/model4.png" alt="Gallery Model">
+            <a href="#">
+              <span>View Demo</span>
+            </a>
+          </article>
+          <article class="landing-category">
+            <img src="images/model.jpg" alt="Gallery Model">
+            <a href="#">
+              <span>View Demo</span>
+            </a>
+          </article>
+          <article class="api-category">
+            <img src="images/model3.jpg" alt="Gallery Model3">
+            <a href="#">
+              <span>View Demo</span>
+            </a>
+          </article>
         </div>
-      </div>
-<!-- ---------------------------------------------- -->
-  </section>
 
-  <section class="social-icons">
-    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
-      <img src="images/linkedin-icon.png" alt="LinkedIn">
-    </a>
-    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
-      <img src="images/twitter-icon.png" alt="Twitter">
-    </a>
-    <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-      <img src="images/github-icon.png" alt="GitHub">
-    </a>
-  </section>
+        <button>Show All</button>
+      </section>
 
-</body>
+      <!-- About Me -->
+      <section class="about" id="about">
+        <h2>About Me</h2>
+        <aside>
+          <img src="images/person.jpg" alt="image">
+          <div>
+            <h4>Who Am I?</h4>
+           <!--<p>I'm Othmane Nissoukin, a Front End Web Student</p>-->
+            <p>
+              Meu nome é Yuri Silvino e sou estudante de Sistemas de Informação na UFVJM, localizada em Diamantina-MG. Inicialmente em minha jornada, explorei o campo da biotecnologia, mas percebi que não poderia utilizar minha curiosidade e habilidade criativa da maneira que gostaria. Então, decidi ingressar em um curso de Informática, onde me deparei com um mundo de possibilidades e comecei a experimentar diferentes áreas, como desenvolvimento de jogos, back-end, front-end, mobile, entre outras. No entanto, durante um bootcamp, descobri a área de Dados, o qual me motivou ainda mais, direcionando meus esforços para esse campo desde então.
+            </p>
+            <ul>
+              <li><span>Name:</span> Yuri Silvino dos Santos</li>
+              <li><span>Date Of Birth:</span> 31/01/2002</li>
+              <li><span>Email:</span> yurisilvino54@gmail.com</li>
+              <li><span>Country:</span> Brasil</li>
+            </ul>
+            <ul>
+              <li id="github"><a href="https://github.com/OthmaneNissoukin" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+              <li id="linkedin"><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+              <li id="twitter"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+              <li id="codepen"><a href="https://codepen.io/othmane-niss" target="_blank"><i class="fa-brands fa-codepen"></i></a></li>
+            </ul>
+            <a href="#" id="download">Download CV</a>
+          </div>
+        </aside>
+      </section>
 
+      <!-- Contact Me -->
+      <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <form>
+          <div>
+              <input type="text" placeholder="Name">
+              <input type="email" placeholder="Email">
+          </div>
+          <input type="text" placeholder="Subject">
+          <textarea rows="6" placeholder="Message"></textarea>
+
+          <input type="button" value="Send">
+        </form>
+      </section>
+    </main>
+
+    <!--<footer>
+      <p>YSS.</p>
+    </footer>-->
+  </body>
 </html>

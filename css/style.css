@@ -11,12 +11,12 @@
 }
 
 :root {
-    --primary-color: #141414;
-    --secondary-color: #0acee1;
-    --blue-hover: #0698a5;
+    --primary-color: #111;
+    --secondary-color: #e50914;
+    --red-hover: #b81e29;
     --white-color: #fff;
     --gray-color: #3b3c3b;
-    --title-color: crimson;
+    --title-color: #e50914;
 }
 
 html {
@@ -156,7 +156,7 @@ section.landing .container {
 }
 
 section.landing .container h2 {
-    text-decoration: underline wavy 2px var(--title-color);
+    text-decoration: 2px var(--title-color);
     text-underline-offset: 3px;
     color: var(--secondary-color);
     font-size: 32px;
@@ -435,7 +435,7 @@ section.portfolio div.projects-container article a {
 }
 
 section.portfolio div.projects-container article a:hover {
-    background-color: #0acfe193;
+    background-color: #e11f0a93;
 }
 
 section.portfolio div.projects-container article a span {
@@ -465,7 +465,7 @@ section.portfolio button {
 }
 
 section.portfolio button:hover {
-    background-color: var(--blue-hover);
+    background-color: var(--red-hover);
 }
 
 /* About*/
@@ -555,10 +555,6 @@ li#twitter:hover {
     background-color: #0acfe183;
 }
 
-li#codepen:hover {
-    background-color: #d9f00f8e;
-}
-
 a#download {
     display: inline-block;
     padding: 8px 16px;
@@ -569,7 +565,7 @@ a#download {
 }
 
 a#download:hover {
-    background-color: var(--blue-hover);
+    background-color: var(--red-hover);
 }
 
 /* Contact Me */
@@ -614,7 +610,7 @@ form input[value="Send"] {
 }
 
 form input[value="Send"]:hover {
-    background-color: var(--blue-hover);
+    background-color: var(--red-hover);
 }
 
 @media (min-width: 600px) {
@@ -636,3 +632,7 @@ footer p {
     font-style: italic;
     font-weight: 300;
 }
+
+#yuriImg {
+    margin-top: -40px; /* Ajuste o valor negativo conforme necessário para mover a imagem para cima */
+  }
